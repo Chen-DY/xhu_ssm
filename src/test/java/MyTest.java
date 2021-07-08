@@ -6,7 +6,7 @@ public class MyTest {
     @Test
     public void testFindAll(){
         ClassPathXmlApplicationContext ac = new ClassPathXmlApplicationContext("ApplicationContext.xml");
-        NewsService newsService = (NewsService) ac.getBean("newsService");
+        NewsService newsService = (NewsService) ac.getBean("NewsService");
         newsService.queryAllNews();
     }
 }
